@@ -128,3 +128,17 @@ footer .eyebrow{margin-bottom:8px}
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
 .reveal.visible{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+
+
+/* Full origin-story essay (About section "read more") */
+.essay-trigger{
+  display:inline-block;margin-top:24px;font:500 11px "DM Mono",monospace;
+  text-transform:uppercase;letter-spacing:.06em;color:var(--gold);
+  border-bottom:1px solid var(--gold);padding-bottom:6px;
+}
+.essay-trigger:hover{color:var(--ink);border-color:var(--ink)}
+.essay-panel{max-width:720px}
+.essay-panel h3{margin-bottom:36px}
+.essay-body p{margin:0 0 22px;color:var(--muted);max-width:640px}
+.essay-body p:last-child{margin-bottom:0}
+.essay-body .gold-line{margin-top:36px!important}
