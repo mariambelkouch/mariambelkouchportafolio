@@ -148,6 +148,13 @@ footer .eyebrow{margin-bottom:8px}
 .about-flow{overflow:hidden;margin-top:28px;max-width:900px}
 .about-flow p{color:var(--muted);max-width:640px;margin:0 0 20px}
 .about-beliefs{clear:both;max-width:640px;padding-top:8px;display:grid;gap:32px}
-.essay-postscript{margin-top:34px;padding-top:28px;border-top:1px solid var(--line)}
-.essay-postscript strong{display:block;font:600 15px "DM Sans",sans-serif;color:var(--ink);margin-bottom:10px}
-.essay-postscript p{margin:0;color:var(--muted);max-width:600px}
+
+.essay-subhead{
+  font:600 12px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.1em;
+  color:var(--gold);margin:36px 0 -4px!important;
+}
+.essay-lenses{margin:28px 0;border-top:1px solid var(--line)}
+.lens{display:grid;grid-template-columns:32px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.lens-n{font:400 12px "DM Mono",monospace;color:var(--gold)}
+.lens strong{display:block;font:600 15px "DM Sans",sans-serif;color:var(--ink);margin-bottom:4px}
+.lens span{color:var(--muted);font-size:14.5px}
