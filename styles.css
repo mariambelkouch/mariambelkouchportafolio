@@ -35,7 +35,7 @@ em{font-weight:500}
 .about-item p{margin:0;color:var(--muted);max-width:460px}
 .about-left{display:flex;flex-direction:column}
 .photo-placeholder{margin-top:40px;width:220px;aspect-ratio:4/5;border:1px dashed var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted);font:400 11px "DM Mono",monospace;text-align:center;padding:20px}
-.about-photo-img{margin-top:40px;width:220px;aspect-ratio:4/5;object-fit:cover;filter:grayscale(12%) contrast(1.05);border:1px solid var(--line)}
+.about-photo-img{margin-top:40px;width:220px;aspect-ratio:4/5;object-fit:cover;object-position:50% 22%;filter:grayscale(12%) contrast(1.05);border:1px solid var(--line)}
 .body-copy p:first-child{margin-bottom:40px}
 .gold-line{color:var(--gold)!important;font:500 20px/1.35 "DM Mono",monospace;margin-top:45px!important}
 .pattern{padding-top:55px;padding-bottom:150px;border-top:1px solid var(--line)}
