@@ -48,18 +48,6 @@ const cases = [
       { h: "What changed", p: "The handbook <strong>outlived her</strong> — still in use by her successors after she left. That colleague built an entire HR career from a starting point he had no prior experience for." }
     ],
     quote: "A system isn't scalable because more people can use it. It's scalable when it no longer needs its creator."
-  },
-  {
-    number: "05",
-    kicker: "JSC GROUP 5771 · Leadership without authority",
-    title: "The hardest people<br>problem has no HR department.",
-    grid: [
-      { h: "The situation", p: "Moderating a volunteer peer group, one member fell significantly behind, grew disruptive, and became defensive whenever redirected. No formal authority, no HR process — just a group starting to suffer for it." },
-      { h: "What I saw", p: "The problem wasn't her ability. It was that nobody had tried redirecting her with real structure — no documented feedback, no clear moment where the group's fit was actually named." },
-      { h: "The design", p: "Consulted an experienced peer, kept co-leads privately informed, ran multiple 1:1s, and gave detailed written feedback across three separate document versions before saying anything final." },
-      { h: "What changed", p: "Sent one clear, kind message that the group wasn't the right fit. She pushed back publicly. <strong>Answered once, with dignity, and let it go</strong> — validated afterward by the wider moderator community and the group's own leader." }
-    ],
-    quote: "You don't need a title to owe someone real feedback. You need the discipline to give it properly before you give it finally."
   }
 ];
 
