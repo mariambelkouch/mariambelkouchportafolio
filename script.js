@@ -36,6 +36,30 @@ const cases = [
       { h: "What changed", p: "<strong>7/7 retained for two years.</strong> <strong>4/7 progressed</strong> into more senior roles. The team/rota model was subsequently adopted by other departments." }
     ],
     quote: "Fairness isn't a value statement. It's a scheduling decision."
+  },
+  {
+    number: "04",
+    kicker: "BLUELINK · Knowledge systems",
+    title: "A system that<br>survives its builder.",
+    grid: [
+      { h: "The situation", p: "Stepped into acting leadership of a 6-person recruiting team after the previous manager left — no formal title, but ownership of delivery and every escalation from there." },
+      { h: "What I saw", p: "Everything the team knew about how to actually do the job lived in people's heads, not anywhere written down." },
+      { h: "The design", p: "Wrote the team's first recruiting handbook, unasked. Separately — and before anyone else saw it — identified a colleague's potential and trained him as an eventual successor, running the full handover before moving on to Havona." },
+      { h: "What changed", p: "The handbook <strong>outlived her</strong> — still in use by her successors after she left. That colleague built an entire HR career from a starting point he had no prior experience for." }
+    ],
+    quote: "A system isn't scalable because more people can use it. It's scalable when it no longer needs its creator."
+  },
+  {
+    number: "05",
+    kicker: "JSC GROUP 5771 · Leadership without authority",
+    title: "The hardest people<br>problem has no HR department.",
+    grid: [
+      { h: "The situation", p: "Moderating a volunteer peer group, one member fell significantly behind, grew disruptive, and became defensive whenever redirected. No formal authority, no HR process — just a group starting to suffer for it." },
+      { h: "What I saw", p: "The problem wasn't her ability. It was that nobody had tried redirecting her with real structure — no documented feedback, no clear moment where the group's fit was actually named." },
+      { h: "The design", p: "Consulted an experienced peer, kept co-leads privately informed, ran multiple 1:1s, and gave detailed written feedback across three separate document versions before saying anything final." },
+      { h: "What changed", p: "Sent one clear, kind message that the group wasn't the right fit. She pushed back publicly. <strong>Answered once, with dignity, and let it go</strong> — validated afterward by the wider moderator community and the group's own leader." }
+    ],
+    quote: "You don't need a title to owe someone real feedback. You need the discipline to give it properly before you give it finally."
   }
 ];
 
