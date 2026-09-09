@@ -135,3 +135,29 @@ document.querySelectorAll('section, .case-row').forEach(el => {
   el.classList.add('reveal');
   observer.observe(el);
 });
+
+
+// Full origin-story essay modal (independent of the case modal above)
+const essayBackdrop = document.getElementById('essayBackdrop');
+const readStoryLink = document.getElementById('readStoryLink');
+const essayClose = document.getElementById('essayClose');
+
+function openEssay(e) {
+  if (e) e.preventDefault();
+  essayBackdrop.classList.add('open');
+  document.body.classList.add('locked');
+  essayBackdrop.querySelector('.essay-panel').scrollTop = 0;
+  essayClose.focus();
+  document.addEventListener('keydown', onEssayKeydown);
+}
+function closeEssay() {
+  essayBackdrop.classList.remove('open');
+  document.body.classList.remove('locked');
+  document.removeEventListener('keydown', onEssayKeydown);
+  readStoryLink.focus();
+}
+function onEssayKeydown(e) { if (e.key === 'Escape') closeEssay(); }
+
+readStoryLink.addEventListener('click', openEssay);
+essayClose.addEventListener('click', closeEssay);
+essayBackdrop.addEventListener('click', (e) => { if (e.target === essayBackdrop) closeEssay(); });
