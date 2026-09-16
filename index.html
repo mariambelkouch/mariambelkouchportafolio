@@ -13,13 +13,24 @@
 <body>
   <header class="site-header">
     <a class="wordmark" href="#top">MARIAM BELKOUCH</a>
-    <nav>
-      <a href="#about">About me</a>
-      <a href="#work">Selected work</a>
-      <a href="#thinking">The Work</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </header>
+
+  <div class="menu-panel" id="menuPanel">
+    <button class="menu-close" id="menuClose" aria-label="Close menu">&times;</button>
+    <nav class="menu-list">
+      <a href="#thesis" data-n="01">The thesis</a>
+      <a href="#pattern" data-n="02">The pattern</a>
+      <a href="#work" data-n="03">Selected work</a>
+      <a href="#infrastructure" data-n="04">The infrastructure</a>
+      <a href="#thinking" data-n="05">The Work</a>
+      <a href="#about" data-n="06">About</a>
+      <a href="#closing" data-n="07">The question I start with</a>
+      <a href="#contact" data-n="—">Contact</a>
+    </nav>
+  </div>
 
   <main id="top">
     <section class="hero">
@@ -46,7 +57,7 @@
       </div>
     </section>
 
-    <section class="pattern">
+    <section id="pattern" class="pattern">
       <p class="eyebrow">02 — The pattern</p>
       <div class="pattern-line">
         <div><strong>SYMPTOM</strong><span>What the organization thinks is wrong.</span></div>
@@ -68,7 +79,7 @@
       <div class="case-list" id="caseList"></div>
     </section>
 
-    <section class="capability">
+    <section id="infrastructure" class="capability">
       <p class="eyebrow">04 — The infrastructure</p>
       <div class="capability-grid">
         <h2>Design is the thread.<br><em>People is where I learned it.</em></h2>
@@ -124,11 +135,14 @@
       </div>
       <div class="about-beliefs">
         <div class="about-item">
+          <strong>Fairness has a cost, and I've paid it.</strong>
+          <p>At that same Bristol bar, tips had always gone to management. I moved them to the people working the shift — money leaving the hands of the people who'd approved it. I did it anyway.</p>
+        </div>
         <a href="#" class="essay-trigger" id="readStoryLink">Read the full story &rarr;</a>
       </div>
     </section>
 
-    <section class="closing">
+    <section id="closing" class="closing">
       <p class="eyebrow">07 — The question I start with</p>
       <h2>I don't start by asking<br>what People problem needs fixing.</h2>
       <p>I start by asking what the organization is trying to accomplish, where the system is creating friction, and what needs to be redesigned so the people inside it can do their jobs without compensating for the design.</p>
@@ -145,6 +159,7 @@
       <div class="footer-links">
         <a href="mailto:mariam.belkouch@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/mariambelkouch/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.linkedin.com/posts/mariambelkouch_every-company-ive-ever-walked-into-had-already-activity-7482374341368725504-doYn" target="_blank" rel="noopener">The Work</a>
       </div>
     </footer>
   </main>
