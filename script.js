@@ -40,7 +40,7 @@ const cases = [
   {
     number: "04",
     kicker: "BLUELINK · Knowledge systems",
-    title: "A system that<br>survives its builder.",
+    title: "Building something that could outlive the person who built it.",
     grid: [
       { h: "The situation", p: "Stepped into acting leadership of a 6-person recruiting team after the previous manager left — no formal title, but ownership of delivery and every escalation from there." },
       { h: "What I saw", p: "Everything the team knew about how to actually do the job lived in people's heads, not anywhere written down." },
@@ -48,6 +48,18 @@ const cases = [
       { h: "What changed", p: "The handbook <strong>outlived her</strong> — still in use by her successors after she left. That colleague built an entire HR career from a starting point he had no prior experience for." }
     ],
     quote: "A system isn't scalable because more people can use it. It's scalable when it no longer needs its creator."
+  },
+  {
+    number: "05",
+    kicker: "HAVONA · Equity & benefits architecture",
+    title: "Making equity mean the same thing in twelve different countries.",
+    grid: [
+      { h: "The situation", p: "Havona was preparing for a funding round with seventeen people already on the team, spread across twelve countries. The equity plan needed to exist before the round did — and it needed to hold up legally in every one of those countries, not just the easy ones." },
+      { h: "What I saw", p: "Global equity isn't one plan copied twelve times. Each jurisdiction has its own tax treatment, its own definition of employee versus contractor, its own rules about what a company can actually promise someone in writing." },
+      { h: "The design", p: "Designed the vesting structure, allocation framework, and cross-jurisdictional governance myself, partnering with Legal and Finance throughout. Along the way, reviewing employment classification across the full team surfaced misclassification risk in nine cases — exposure for the company and for the people affected — corrected before the round, not after. Built the benefits portfolio the same way: direct vendor relationships, no broker layer, country by country." },
+      { h: "What changed", p: "A single equity plan that actually held up in twelve different legal systems, not twelve separate promises hoping nobody checked. The mechanics stay confidential — that's the nature of equity work — but the design problem, and how I solved it, isn't." }
+    ],
+    quote: "Global doesn't mean one policy, copied twelve times. It means one philosophy, proven true twelve different ways."
   }
 ];
 
@@ -149,3 +161,29 @@ function onEssayKeydown(e) { if (e.key === 'Escape') closeEssay(); }
 readStoryLink.addEventListener('click', openEssay);
 essayClose.addEventListener('click', closeEssay);
 essayBackdrop.addEventListener('click', (e) => { if (e.target === essayBackdrop) closeEssay(); });
+
+
+// Hamburger menu toggle
+const menuToggle = document.getElementById('menuToggle');
+const menuPanel = document.getElementById('menuPanel');
+const menuClose = document.getElementById('menuClose');
+
+function openMenu() {
+  menuPanel.classList.add('open');
+  menuToggle.setAttribute('aria-expanded', 'true');
+  document.body.classList.add('menu-open');
+  document.addEventListener('keydown', onMenuKeydown);
+}
+function closeMenu() {
+  menuPanel.classList.remove('open');
+  menuToggle.setAttribute('aria-expanded', 'false');
+  document.body.classList.remove('menu-open');
+  document.removeEventListener('keydown', onMenuKeydown);
+}
+function onMenuKeydown(e) { if (e.key === 'Escape') closeMenu(); }
+
+menuToggle.addEventListener('click', () => {
+  menuPanel.classList.contains('open') ? closeMenu() : openMenu();
+});
+menuClose.addEventListener('click', closeMenu);
+menuPanel.querySelectorAll('.menu-list a').forEach(a => a.addEventListener('click', closeMenu));
