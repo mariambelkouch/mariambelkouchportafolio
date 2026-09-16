@@ -190,26 +190,28 @@ footer .eyebrow{margin-bottom:8px}
 
 .menu-panel{
   position:fixed;inset:0;background:var(--paper);z-index:200;
-  display:flex;align-items:center;justify-content:center;
+  overflow-y:auto;
   opacity:0;visibility:hidden;transition:opacity .3s ease;
 }
 .menu-panel.open{opacity:1;visibility:visible}
 .menu-close{
-  position:absolute;top:24px;right:5vw;background:none;border:1px solid var(--line);
+  position:fixed;top:24px;right:5vw;background:none;border:1px solid var(--line);
   color:var(--muted);width:40px;height:40px;border-radius:50%;font-size:20px;
-  line-height:1;cursor:pointer;
+  line-height:1;cursor:pointer;z-index:201;
 }
 .menu-close:hover{color:var(--ink);border-color:var(--gold)}
-.menu-list{display:flex;flex-direction:column;width:100%;max-width:520px;padding:0 5vw}
+.menu-list{
+  display:flex;flex-direction:column;width:100%;max-width:640px;
+  margin:0 auto;padding:104px 5vw 60px;
+}
 .menu-list a{
-  display:flex;align-items:baseline;gap:22px;padding:18px 0;
+  display:grid;grid-template-columns:44px 1fr;align-items:baseline;padding:14px 0;
   border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none;
-  font:500 clamp(20px,3.4vw,28px) "Playfair Display",serif;text-transform:none;letter-spacing:normal;transition:color .15s ease;
+  font:500 20px "Playfair Display",serif;text-transform:none;letter-spacing:normal;transition:color .15s ease;
 }
 .menu-list a:first-child{border-top:1px solid var(--line)}
 .menu-list a::before{
-  content:attr(data-n);font:400 12px "DM Mono",monospace;color:var(--gold);
-  min-width:26px;flex-shrink:0;
+  content:attr(data-n);font:400 11px "DM Mono",monospace;color:var(--gold);
 }
 .menu-list a:hover{color:var(--gold)}
 body.menu-open{overflow:hidden}
