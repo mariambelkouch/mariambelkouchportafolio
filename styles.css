@@ -22,7 +22,7 @@ main>section,footer{padding-left:5vw;padding-right:5vw}
 em{font-weight:500}
 .hero-bottom{display:grid;grid-template-columns:1fr auto;gap:60px;align-items:end;margin-top:80px;max-width:760px}
 .hero-bottom p{max-width:560px;color:var(--muted);font-size:18px}
-.arrow-link{font:500 11px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.06em;border-bottom:1px solid var(--ink);padding-bottom:8px}
+.arrow-link{font:500 11px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.06em;color:var(--gold);border-bottom:1px solid var(--gold);padding-bottom:8px}
 .arrow-link span{margin-left:12px;font-size:16px}
 .statement,.pattern,.work,.capability,.thinking,.closing{max-width:var(--max);margin:auto}
 .statement{padding-top:150px;padding-bottom:150px;border-top:1px solid var(--line)}
